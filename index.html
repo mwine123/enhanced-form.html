@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      form {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="password"] {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+      input[type="submit"] {
+        width: 100%;
+        height: 40px;
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Enhanced Form</h1>
+      <h1>Song Incorporated</h1>
+    </header>
+    <main>
+      <section>
+        <h2>About Us</h2>
+        <ul>
+          <li>We are a team of experts in web development.</li>
+          <li>We provide high-quality services to our clients.</li>
+          <li>We are committed to delivering projects on time.</li>
+        </ul>
+        <table>
+          <caption>
+            Our Team
+          </caption>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ruby Mwine-Song Takonwaa</td>
+              <td>CEO</td>
+            </tr>
+            <tr>
+              <td>Joseph Afful</td>
+              <td>CTO</td>
+            </tr>
+          </tbody>
+        </table>
+        <img src="https://picsum.photos/200/300" alt="Our Team" />
+      </section>
+      <section>
+        <h2>Contact Form</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John Doe"
+            required
+            autocomplete="name"
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="john.doe@example.com"
+            required
+            autocomplete="email"
+          />
+
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="123-456-7890"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+            autocomplete="tel"
+          />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            autocomplete="new-password"
+            minlength="8"
+            maxlength="20"
+          />
+
+          <label for="comments">Comments:</label>
+          <textarea
+            id="comments"
+            name="comments"
+            rows="5"
+            cols="30"
+            placeholder="Enter your comments here..."
+          ></textarea>
+
+          <label for="subscribe">Subscribe to Newsletter:</label>
+          <input type="checkbox" id="subscribe" name="subscribe" checked />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Song</p>
+    </footer>
+  </body>
+</html>
